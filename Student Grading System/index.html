@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDENT GRADING SYSTEM</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/response.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> <!-- LINK OF THE BOOTSTARP-->
+</head>
+<body>
+<!-- CODE START HERE-->
+
+    <!--Countainer-->
+    <div class="container-fluid mt-1" id="mainheader">
+        <div class="row m-1 p-1" id="header">
+       <img src="/img/bothlogo.png" align ="center" alt="logo" style="width: 1500px; height: 150px;" > <!-- LOGO-->
+           </div>
+       </div>
+
+             <!-- THE BOXES-->
+       <div class="row m-1 p-1"> <!-- ROW FOR THE 2 BOXES -->
+        <div class="col-sm text-dark border m-1 p-2" > <!-- COLLUM FORE THE 1st BOX -->
+            <div class="box-1">  <!-- THE 1st BOX -->
+            <legend class="SR">Student Record</legend>
+            <form id="Record" onsubmit="return calculateGrade()">
+
+                <!-- INSIDE THE BOX 1-->
+            <center><div class="col-8"><input type="text" name="Name" class="form-control mb-2" pattern = "[A-Za-z]+,\s[A-Za-z]+\s[A-Za-z]\.*" 
+            id="Names" placeholder="Last Name, First Name M.I" required/></div></center>
+
+            <center><div class="col-8"><input type="text" name="Course" class="form-control mb-2" pattern = "[A-Z]{4}-\{2}[A-Z]\d"
+            id="Course" placeholder= "Course & Section" required/></div></center>
+
+           <center><div class="col-8"><input type="text" name="Subject" class="form-control mb-2" pattern = "[A-Za-z\s]+"
+           id="Subject" placeholder="Subject" required/></div></center>
+
+           <center><div class="col-8">
+            <input type="number" id="Prelim" class="form-control mb-2" placeholder=
+             "Prelim" required/>
+           </div></center>
+         
+           <center><div class="col-8" >
+            <input type="number" id="Midterm" class="form-control mb-2" placeholder=
+             "Midterm" required/>
+           </div></center>
+
+           <center><div class="col-8" >
+            <input type="number" id="Final" class="form-control mb-2" placeholder=
+             "Final" required/>
+           </div></center>
+            
+           <center><button class="btn-lg" type ="submit" >Calculate</button></center>
+        
+        </form>
+
+           </div>
+            <div>
+           </div>
+        </div> 
+
+        <!-- END INSIDE THE BOX -->
+
+
+        <!--  THE 2nd BOX -->
+    <div class="col-sm  text-dark border m-1 p-2"> <!-- COLLUM FORE THE 2nd BOX -->
+
+        <div class="box-2">
+
+            <legend class="RR">Result</legend>
+
+            <!-- INSIDE THE BOX 2 -->
+
+            <form id="Result" onsubmit="return resetForm()">
+
+            <center><div class="col-8"><input name="name"  id="Name" class="form-control mb-2"
+                 placeholder= "Name" readonly ></div></center>
+ 
+            <center><div class="col-8"><input name="Course" id="Courses" class="form-control mb-2"
+                 placeholder= "Course & Section" readonly></div></center>
+
+            <center><div class="col-8"> <input name="Subject" id="Subjects" class="form-control mb-2" placeholder=
+                "Subject" readonly></div></center>
+
+            <center><div class="col-8"><input name="FinalGrade" id="result" class="form-control mb-2" placeholder=
+                "Final Grade" readonly></div></center>
+
+            <center><div class="col-8"><input name="EquivalentGrade" id="EquivalentGrades" class="form-control mb-2" placeholder=
+                "Equivalent Grade" readonly></div></center>
+            
+            <center><div class="col-8"><input name="Graderemarks" id="Graderemarks" class="form-control mb-2" placeholder=
+                "Remarks" readonly></div></center>
+           <div>
+
+           </form>
+       
+            <center><button class="btn-lg" onclick="bura() type ="reset ">Reset</button></center>
+        </div>
+           </div>
+           <!-- END OF INSIDE THE BOX 2 -->
+        </div>
+       </div>
+   </div>
+
+<!-- JUST LINK OF THE SCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+    crossorigin="anonymous"></script>
+</body>
+</html>
+
+<!-- DAN AND GAB CODE'S -->
