@@ -1,0 +1,38 @@
+The Creator of this Project
+Danreb Odias Montecillo - DICT 22M1
+Gabriel M. Arevalo - DICT 22M1
+
+Good day everyone. this our work and presentation of group activity about student grading system.
+
+First let me explain what is the definition of html, css , js and also bootstrap which is we used it to build our work. 
+
+The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It is frequently assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript.
+
+So what is relationship between html, css, js and bootstrap. 
+
+HTML provides the basic structure of sites, which is enhanced and modified by other technologies like CSS and JavaScript. CSS is used to control presentation, formatting, and layout. JavaScript is used to control the behavior of different elements.
+
+So here how it what works.
+
+Firsts, fill out the student record.
+Name, 
+Course,
+Subject,
+Prelim, midterm,final grade.
+After that you can able to see the results.
+Either the student are passed or fail.
+ 
+If you click the summited button without fill out the requirements need. it will have no function
+You can see the box that saying please fillout the requirements need.
+
+You can also see the result box which you can see on the side  is  changing based on the result of the student grade.
+
+You can see there's a lot of container on html codes (DIV) which is the devision. It separately to easy design and access to css.
+
+JavaScript is the Programming Language for the Web. JavaScript can update and change both HTML and CSS. JavaScript can calculate, manipulate and validate data.a
+
+What is Bootstrap used for? Bootstrap makes responsive web design a reality. It makes it possible for a web page or app to detect the visitor's screen size and orientation and automatically adapt the display accordingly. 
+
+What is the main purpose of Bootstrap?
+It is a front-end framework used for easier and faster web development. It includes HTML and CSS based design templates for typography, forms, buttons, tables, navigation, modals, image carousels and many others. It can also use JavaScript plug-ins. It facilitates you to create responsive designs.
+
